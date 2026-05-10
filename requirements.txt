@@ -1,0 +1,11 @@
+langgraph
+langchain
+langchain-core
+langchain-google-genai
+langchain-community
+sqlalchemy
+pydantic
+python-dotenv
+streamlit
+apscheduler
+pandas
