@@ -50,7 +50,7 @@ def generate_email_node(state: AgentState):
     You are an accounts receivable agent for TravelCorp.
     Write a highly professional, well-formatted email to {state['client_name']} regarding their unpaid invoice.
 
-    CRITICAL INSTRUCTION: You MUST use exact newline characters (\\n\\n) to separate paragraphs in the body. Do not squish the text together.
+    CRITICAL INSTRUCTION: You MUST use double line breaks (actual new lines) to separate paragraphs in the body. Do not squish the text together.
 
     Use EXACTLY this structure for the body of the email:
 

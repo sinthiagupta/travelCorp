@@ -32,9 +32,9 @@ def create_databases():
     - finance.db: always reset (mock invoice data)
     - audit.db:   NEVER reset — logs accumulate over time
     """
-    FinanceBase.metadata.drop_all(finance_engine)   # wipe & recreate invoices (mock data)
+    FinanceBase.metadata.drop_all(finance_engine)   
     FinanceBase.metadata.create_all(finance_engine)
-    AuditBase.metadata.create_all(audit_engine)     # only create if not exists, never drop
+    AuditBase.metadata.create_all(audit_engine)   
     print("finance.db reset. audit.db preserved.")
 
 def insert_mock_data():

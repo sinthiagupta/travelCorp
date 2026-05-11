@@ -108,7 +108,9 @@ if logs:
     if selected_log.email_content:
         with st.container():
             st.markdown(f"**Tone Analysis:** `{selected_log.tone_used}` | **Status:** `{selected_log.status}`")
-            st.text_area("Final Draft Sent to Client:", selected_log.email_content, height=500)
+            # Unescape literal \n if they exist from the LLM output
+            display_text = selected_log.email_content.replace("\\n", "\n")
+            st.text_area("Final Draft Sent to Client:", display_text, height=500)
     else:
         st.warning("⚠️ No email content generated. This invoice was escalated directly to the Legal Department.")
 else:
