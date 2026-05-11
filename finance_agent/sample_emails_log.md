@@ -6,7 +6,7 @@
 ---
 
 ## 📸 System Overview (Dashboard Proof)
-![Dashboard Overview](./images/Screenshot 2026-05-11 124345.png)
+![Dashboard Overview](./images/Screenshot%202026-05-11%20124345.png)
 *Figure 1: Real-time dashboard showing 5 pending invoices and 100+ audit logs processed.*
 
 ---
